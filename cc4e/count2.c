@@ -9,7 +9,7 @@ main() /* count digits, white space, others */
 	for (i = 0; i < 10; ++i)
 		ndigit[i] = 0;
 
-	while ((c = getchar()) != 'q')
+	while ((c = getchar()) != 'q') /* q is used instead of EOF for testing  */
 		if (c >= '0' && c <= '9')
 			++ndigit[c-'0'];
 		else if (c == ' ' || c == '\n' || c == '\t')
